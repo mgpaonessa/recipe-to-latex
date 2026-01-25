@@ -1,0 +1,28 @@
+.subtitle{
+    padding-left: 50vw;
+    color: blue;
+}
+
+label{
+    padding-left: 50vw;
+    color:orange;
+}
+
+#headingnote1id{
+    padding-left: 50vw+10px;
+    color:brown;
+}
+
+button{
+    padding-left: 50vw;
+    background-color: antiquewhite;
+    color: darkred
+}
+
+/*
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    */
