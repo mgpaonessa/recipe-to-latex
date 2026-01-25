@@ -1,5 +1,15 @@
 const button = document.getElementById("outputbutton");
 
+class Recipe 
+{
+  constructor() {
+    this.title = "";
+    this.ingredients = [];
+    this.instructions = [];
+    this.notes = "";
+  }
+}
+
 function displayValue()
 {
     const inputField1=document.getElementById("title");
