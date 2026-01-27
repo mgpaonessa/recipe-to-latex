@@ -1,5 +1,6 @@
 const button = document.getElementById("outputbutton");
 
+// model class for recipe to put things into LaTeX format
 class Recipe 
 {
   constructor() {
@@ -10,6 +11,7 @@ class Recipe
   }
 }
 
+// displays values in 3 input fields to text box after pressing button on page
 function displayValue()
 {
     const inputField1=document.getElementById("title");
