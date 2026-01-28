@@ -1,20 +1,22 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
 .subtitle{
-    padding-left: 50vw;
     color: blue;
 }
 
 label{
-    padding-left: 50vw;
     color:orange;
 }
 
 #headingnote1id{
-    padding-left: 50vw+10px;
     color:brown;
 }
 
 button{
-    padding-left: 50vw;
     background-color: antiquewhite;
     color: darkred
 }
