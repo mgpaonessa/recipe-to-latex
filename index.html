@@ -3,96 +3,46 @@
         <meta charset="utf-8"/>
         <title> Recipe to LaTeX </title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <div>
-                <label>Recipe Title:</label>
-        <br>
-        <input
-            type="text"
-            id="title"
-            name="title"
-            size="50"
-        />
-        <br>
-        <div class="container">
-            <label class="headingtitle">Recipe Title:
-                <br></br>
-                <label id="headingnote1id" class="headingnote">Subtitle:</label>
-            </label>
+            <div class="input-area">
 
-        <label>Ingredients:</label>
-        <br>
-        <input
-            type="text"
-            id="ingredient"
-            name="ingredient"
-            size="50"
-        />
-        <br>
-            <br>
-            <input
-                type="text"
-                id="title"
-                name="title"
-                size="50"
-            />
-            <br>
+                <form action="app.js">
+                    <label for="recipe-title" class="headingtitle">Recipe Title:
+                        <br></br>
+                        <textarea class="text" id="recipe-title" placeholder="Type Here"></textarea>
+                        <br></br>
+                    
+                        <label id="headingnote1id" class="headingnote">Subtitle:</label>
+                        <br></br>
+                        <textarea class="text" id="recipe-subtitle" placeholder="Type Here"></textarea>
+                        <br></br>
+                    
+                    </label>
 
-        <label>Instructions:</label>
-        <br>
-        <input
-            type="text"
-            id="instruction"
-            name="instruction"
-            size="50"
-        />
-        <br>
-            <label class="subtitle">Ingredients:</label>
-            <br>
-            <input
-                type="text"
-                id="ingredient"
-                name="ingredient"
-                size="50"
-            />
-            <br>
+                    <label class="ingredients">Ingredients:</label>
+                    <br></br>
+                    <textarea class="text" id="ingredient" placeholder="Type Here"></textarea>
+                    <br></br>
 
-        <button type="button" id="outputbutton" name="outputbutton">
-            Output Button
-        </button>
-        <br>
-            <label class="subtitle">Instructions:</label>
-            <br>
-            <input
-                type="text"
-                id="instruction"
-                name="instruction"
-                size="50"
-            />
-            <br>
-
-        <label>Output:</label>
-        <br>
-        <textarea id="output" name="output">
-        </textarea>
-        <br>
-    <script src="app.js"></script>
-            <button type="button" id="outputbutton" name="outputbutton">
-                Output Button
-            </button>
-            <br>
+                    <label class="instructions">Instructions:</label>
+                    <br></br>
+                    <textarea class="text" id="instruction" placeholder="Type Here"></textarea>
+                    <br></br>
+                    
+                    <input id="output-button" class="output-button" type="button" value="Convert to LaTeX">
+                </form>
             </div>
-
-            <div>
-                <label>Output:</label>
-            <br>
-            <textarea id="output" name="output">
-            </textarea>
-            <br>
-        <script src="app.js"></script>
+            <div class="output-area">
+                <pre id="output">
+                <code>
+                Test
+                </code>
+                </pre>
             </div>
         </div>
+        <script src="app.js" defer></script> 
     </body>
 </html>

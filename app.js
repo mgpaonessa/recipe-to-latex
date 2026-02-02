@@ -1,4 +1,4 @@
-const button = document.getElementById("outputbutton");
+const button = document.getElementById("output-button");
 
 // model class for recipe to put things into LaTeX format
 class Recipe 
@@ -14,15 +14,17 @@ class Recipe
 // displays values in 3 input fields to text box after pressing button on page
 function displayValue()
 {
-    const inputField1=document.getElementById("title");
-    const inputField2=document.getElementById("ingredient");
-    const inputField3=document.getElementById("instruction");
+    const titleField=document.getElementById("recipe-title");
+    const subtitleField=document.getElementById("recipe-subtitle");
+    const ingredientField=document.getElementById("ingredient");
+    const instructionField=document.getElementById("instruction");
 
-    inputValue1=inputField1.value;
-    inputValue2=inputField2.value;
-    inputValue3=inputField3.value;
+    const title = titleField.value;
+    const subtitle = subtitleField.value;
+    const ingredients = ingredientField.value;
+    const instructions = instructionField.value;
 
-    document.getElementById("output").value = "Input value: \n" + inputValue1+"\n"+inputValue2+"\n"+inputValue3;
+    document.getElementById("output").innerText =`Title: ${title}\nSubtitle: ${subtitle}\n\nIngredients:\n${ingredients}\n\nInstructions:\n${instructions}`;
 }
 
 button.addEventListener("click", displayValue);
