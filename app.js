@@ -27,4 +27,9 @@ function displayValue()
     document.getElementById("output").innerText =`Title: ${title}\nSubtitle: ${subtitle}\n\nIngredients:\n${ingredients}\n\nInstructions:\n${instructions}`;
 }
 
+function copyToClipboard()
+{
+  
+}
+
 button.addEventListener("click", displayValue);
